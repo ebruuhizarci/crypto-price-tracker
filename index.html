@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Price Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Crypto Price Tracker</h1>
+
+    <p class="info">
+      Basit bir uygulama: CoinGecko API kullanarak anlık BTC ve ETH fiyatını gösterir.
+    </p>
+
+    <div class="controls">
+      <label for="coin">Coin seç:</label>
+      <select id="coin">
+        <option value="bitcoin">Bitcoin (BTC)</option>
+        <option value="ethereum">Ethereum (ETH)</option>
+      </select>
+      <button id="refresh">Fiyatı Getir</button>
+    </div>
+
+    <div id="result" class="result">
+      Henüz sorgu yapılmadı.
+    </div>
+
+    <div id="error" class="error"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
